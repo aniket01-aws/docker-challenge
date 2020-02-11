@@ -33,7 +33,7 @@
         state: present
    
     - name: docker build image
-      command: docker build -t flask-tutorial:latest .
+      command: docker build -f /Vagrant/Dockerfile -t flask-tutorial:latest .
    
     - name: docker run image
       command: docker run -d -p 80:5000 flask-tutorial
