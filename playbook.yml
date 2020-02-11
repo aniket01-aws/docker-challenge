@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: allhost
   become: true
   vars :
     create_containers: 1
