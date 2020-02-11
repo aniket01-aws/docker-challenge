@@ -51,6 +51,6 @@ Vagrant.configure(2) do |config|
   #   vb.memory = "1024"
   # eun Ansible from the Vagrant VM
   config.vm.provision "ansible_local" do |ansible|
-    ansible.playbook = "/home/jack123/dockerch/challenge/playbook.yml"
+    ansible.playbook = "playbook.yml"
   end
 end
